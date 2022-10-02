@@ -1,0 +1,4 @@
+module pam
+{
+	exports core;
+}
