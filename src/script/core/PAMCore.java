@@ -1,13 +1,13 @@
 package core;
 
-public class PAM
+public class PAMCore
 {
 	public static void main(String[] args)
 	{
-		new PAM();
+		new PAMCore();
 	}
 
-	public PAM()
+	public PAMCore()
 	{
 
 	}
