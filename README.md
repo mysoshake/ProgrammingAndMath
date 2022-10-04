@@ -18,7 +18,7 @@
 
 #各英語一覧
 
-[From Here https://home.hiroshima-u.ac.jp/nyoho/mathenglish.html] (https://home.hiroshima-u.ac.jp/nyoho/mathenglish.html)
+[From Here https://home.hiroshima-u.ac.jp/nyoho/mathenglish.html](https://home.hiroshima-u.ac.jp/nyoho/mathenglish.html)
  <br>
 
 そのままの意味の言葉 <br>
