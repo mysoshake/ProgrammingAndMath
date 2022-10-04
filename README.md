@@ -9,10 +9,12 @@
 # TODO
 ## ペアノの公理から1+1=2を証明する
 ### 必要なこと
-1. 数学的対象すべての親クラスMathObject作成
-2. 公理の性質をまとめる
-2.1. 公理クラスを作成
-3. ペアノの公理を作成
+1. 数学的対象すべての親クラスMathObject作成 <br>
+
+2. 公理の性質をまとめる <br>
+2.1. 公理クラスを作成 <br>
+
+3. ペアノの公理を作成 <br>
 
 #各英語一覧
 [From Here https://home.hiroshima-u.ac.jp/nyoho/mathenglish.html] (https://home.hiroshima-u.ac.jp/nyoho/mathenglish.html)
