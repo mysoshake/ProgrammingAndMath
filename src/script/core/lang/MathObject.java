@@ -5,7 +5,7 @@ public class MathObject
 
 	public MathBoolean equals(MathObject mobj)
 	{
-		return MathBoolean.True;
+		return MathBoolean.TRUE;
 	}
 
 	public String toString()
