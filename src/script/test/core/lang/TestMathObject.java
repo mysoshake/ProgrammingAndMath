@@ -15,9 +15,6 @@ class TestMathObject
 		MathObject mobj1 = new MathObject();
 		MathObject mobj2 = new MathObject("ObjectName");
 
-		System.out.println(mobj1);
-		System.out.println(mobj2);
-
 		assertEquals(mobj1.name(), "");
 		assertEquals(mobj2.name(), "ObjectName");
 
