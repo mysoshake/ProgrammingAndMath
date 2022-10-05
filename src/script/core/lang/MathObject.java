@@ -30,7 +30,7 @@ public class MathObject
 
 	public String toString()
 	{
-		return "[" + this.name + "]" + this.getClass().getName() +  "@" + this.hashCode();
+		return "[" + this.name + "]" + "@" + this.hashCode();
 	}
 
 }

@@ -1,6 +1,8 @@
 module pam
 {
 	exports core;
-	exports test.core.lang;
-	requires org.junit.jupiter.api;
+	exports core.lang;
+	exports core.logic;
+
+	requires transitive org.junit.jupiter.api;
 }
