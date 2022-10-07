@@ -1,5 +1,7 @@
 package core.lang;
 
+import core.lang.constance.MathBoolean;
+
 // 数学的な対象すべての型
 public class MathObject
 {
