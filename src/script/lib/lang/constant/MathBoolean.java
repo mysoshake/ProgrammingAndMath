@@ -1,4 +1,4 @@
-package lib.lang.constance;
+package lib.lang.constant;
 
 import lib.lang.MathObject;
 
