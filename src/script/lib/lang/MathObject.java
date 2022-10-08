@@ -1,6 +1,6 @@
-package core.lang;
+package lib.lang;
 
-import core.lang.constance.MathBoolean;
+import lib.lang.constance.MathBoolean;
 
 // 数学的な対象すべての型
 public class MathObject

@@ -1,6 +1,6 @@
-package core.lang;
+package lib.lang;
 
 public interface MathCorrespondence<Domain extends MathSet, Range extends MathSet>
 {
-	public Range ope(Domain argument);
+	public Range operate(Domain ... argument);
 }

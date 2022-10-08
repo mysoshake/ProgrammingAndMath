@@ -1,9 +1,9 @@
 module pam
 {
 	exports core;
-	exports core.lang;
-	exports core.lang.constance;
-	exports core.lang.logic;
+	exports lib.lang;
+	exports lib.lang.constance;
+	exports lib.lang.logic;
 
 	requires transitive org.junit.jupiter.api;
 }

@@ -1,4 +1,4 @@
-package core.lang.logic;
+package lib.lang.logic;
 
 // 命題
 public class MathProposition

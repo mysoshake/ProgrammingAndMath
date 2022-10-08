@@ -1,6 +1,6 @@
-package core.lang.logic;
+package lib.lang.logic;
 
-import core.lang.MathObject;
+import lib.lang.MathObject;
 
 // 補題
 public class MathLemma extends MathObject

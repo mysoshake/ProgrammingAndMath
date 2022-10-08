@@ -1,6 +1,6 @@
-package core.lang.constance;
+package lib.lang.constance;
 
-import core.lang.MathObject;
+import lib.lang.MathObject;
 
 public class MathBoolean extends MathObject
 {

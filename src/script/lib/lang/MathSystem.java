@@ -1,4 +1,4 @@
-package core.lang;
+package lib.lang;
 
 // **系
 public class MathSystem<MATH_TYPE> extends MathObject
