@@ -1,6 +1,6 @@
 package lib.lang;
 
-import lib.lang.constance.MathBoolean;
+import lib.lang.constant.MathBoolean;
 
 // 数学的な対象すべての型
 public class MathObject
