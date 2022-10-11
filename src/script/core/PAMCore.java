@@ -7,21 +7,26 @@ public class PAMCore
 	public static void main(String[] args)
 	{
 		new PAMCore();
-
 	}
 
 	public PAMCore()
 	{
 		System.out.println("Setup");
-		// TODO SETUP
+		new Controller();
 		System.out.println("Setup Finish");
+
+		// Setup finished correctly
+		if (Setup() == true)
+		{
+			Launch();
+		}
 	}
 
-	public boolean Launch()
+	public boolean Setup()
 	{
 		try
 		{
-			// TODO Call Launch
+			// TODO Call Launcher
 			fail("Not Implemented");
 		}
 		catch (Exception e)
@@ -32,5 +37,10 @@ public class PAMCore
 		}
 
 		return true;
+	}
+
+	public void Launch()
+	{
+		new Controller();
 	}
 }
