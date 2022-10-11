@@ -8,18 +8,17 @@ public class MathSet extends MathObject
 {
 	public static final MathSet VOID = new MathSet();
 
-	private final String name;
 	private final List<MathObject> elements;
 
 	public MathSet()
 	{
-		name = null;
+		super(null);
 		this.elements = List.of();
 	}
 
 	public MathSet(String name, MathObject... elements)
 	{
-		this.name = name;
+		super(name);
 		this.elements = List.of(elements);
 	}
 
