@@ -39,8 +39,12 @@ public class PAMCore
 		return true;
 	}
 
-	public void Launch()
+	public boolean Launch()
 	{
+
 		new Controller();
+
+		//Correct Finish
+		return true;
 	}
 }

@@ -13,7 +13,7 @@ public class Controller
 		String input = In("input yourName>");
 
 		Out("Your input is " + input + "\n");
-		System.out.println("Controoller");
+		System.out.println("Controler Fin");
 	}
 
 	public static void Out(Object obj)
