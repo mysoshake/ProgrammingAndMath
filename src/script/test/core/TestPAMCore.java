@@ -1,6 +1,6 @@
 package test.core;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
@@ -14,7 +14,8 @@ class TestPAMCore
 	void test()
 	{
 		PAMCore tested = new PAMCore();
-		assertFalse();
+		boolean wasLaunched = tested.Launch();
+		assertTrue(wasLaunched);
 	}
 
 }
