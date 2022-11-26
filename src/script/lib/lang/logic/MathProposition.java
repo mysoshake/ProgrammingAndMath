@@ -13,14 +13,14 @@ public class MathProposition
 
 	public static final MathProposition F = new MathProposition((x) -> MathBoolean.FALSE);
 
-	private final Function<MathObject, MathBoolean> result;
+	private final Function<MathObject[], MathBoolean> result;
 
 	public MathProposition()
 	{
 		result = (x) -> MathBoolean.FALSE;
 	}
 
-	public MathProposition(Function<MathObject, MathBoolean> eval)
+	public MathProposition(Function<MathObject[], MathBoolean> eval)
 	{
 		result = eval;
 	}
@@ -61,9 +61,8 @@ public class MathProposition
 		return Conjunction(p);
 	}
 
-	public MathBoolean Evaluate(MathObject x)
+	public MathBoolean Evaluate(MathObject... x)
 	{
 		return result.apply(x);
 	}
-
 }
