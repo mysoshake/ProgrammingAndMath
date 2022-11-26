@@ -25,29 +25,39 @@ public class MathProposition
 		result = eval;
 	}
 
-	public MathProposition Negate()
+	public MathProposition Negation()
 	{
-		MathProposition ret = new MathProposition((x) -> this.Evaluate(x).Not());
+		return new MathProposition((x) -> this.Evaluate(x).Negate());
+	}
 
-		return ret;
+	public MathProposition Disjunction(MathProposition p)
+	{
+		return new MathProposition((x) -> this.Evaluate(x).Disjunction(p.Evaluate(x)));
+	}
+
+	public MathProposition Conjunction(MathProposition p)
+	{
+		return new MathProposition((x) -> this.Evaluate(x).Conjunction(p.Evaluate(x)));
+	}
+
+	public MathProposition Not()
+	{
+		return Negation();
 	}
 
 	public MathProposition Or(MathProposition p)
 	{
-		MathProposition ret = new MathProposition((x) -> this.Evaluate(x).Or(p.Evaluate(x)));
-
-		return ret;
+		return Disjunction(p);
 	}
 
 	public MathProposition And(MathProposition p)
 	{
-		MathProposition ret = new MathProposition((x) -> p.Evaluate(x).Not());
-
-		return ret;
+		return Conjunction(p);
 	}
 
 	public MathBoolean Evaluate(MathObject x)
 	{
 		return result.apply(x);
 	}
+
 }
