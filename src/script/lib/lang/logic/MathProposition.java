@@ -27,17 +27,23 @@ public class MathProposition
 
 	public MathProposition Negation()
 	{
-		return new MathProposition((x) -> this.Evaluate(x).Negate());
+		MathProposition ret = new MathProposition((x) -> this.Evaluate(x).Negate());
+		System.out.println(ret);
+		return ret;
 	}
 
 	public MathProposition Disjunction(MathProposition p)
 	{
-		return new MathProposition((x) -> this.Evaluate(x).Disjunction(p.Evaluate(x)));
+		MathProposition ret = new MathProposition((x) -> this.Evaluate(x).Disjunction(p.Evaluate(x)));
+		System.out.println(ret);
+		return ret;
 	}
 
 	public MathProposition Conjunction(MathProposition p)
 	{
-		return new MathProposition((x) -> this.Evaluate(x).Conjunction(p.Evaluate(x)));
+		MathProposition ret = new MathProposition((x) -> this.Evaluate(x).Conjunction(p.Evaluate(x)));
+		System.out.println(ret);
+		return ret;
 	}
 
 	public MathProposition Not()
