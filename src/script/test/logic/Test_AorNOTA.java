@@ -1,4 +1,4 @@
-package testuser.elementarylogics;
+package test.logic;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -43,7 +43,7 @@ class Test_AorNOTA
 		MathProposition A;
 
 		A = MathProposition.T;
-		assertEquals(MathProposition.T, A.Or(MathProposition.T));
+		assertEquals(MathProposition.T.Evaluate(), A.Or(MathProposition.T));
 
 		A = MathProposition.F;
 		assertEquals(MathProposition.T, A.Or(MathProposition.T));
