@@ -1,7 +1,5 @@
 package lib.lang.constant;
 
-import java.lang.reflect.Type;
-
 import lib.lang.MathObject;
 
 public class MathBoolean extends MathObject
@@ -92,9 +90,11 @@ public class MathBoolean extends MathObject
 	{
 		if (obj == null) return false;
 
-		if (this instanceof()) obj = (MathBoolean) obj;
-
-
+		if (obj instanceof MathBoolean)
+		{
+			if (this.Value == ((MathBoolean) obj).Value) return true;
+			else return false;
+		}
 
 		return false;
 	}
