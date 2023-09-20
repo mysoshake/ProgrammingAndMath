@@ -25,14 +25,15 @@ public class Terminal
 	
 	private void start()
 	{
-		Log.Standard.printWithTitle("情報", "なにもありません");
+		Log.Standard.printWithTitle("情報", "なにもありません", "例えばバージョン情報などを表示する予定です");
 		while (this.RUN)
 		{
 			try
 			{
 				System.out.print(">");
 				String input = in.readLine();
-				System.out.println("User input:" + input);
+				ExeType response = Execute.go(input);
+				if (response == ExeType.QUIT) break;
 			}
 			catch (IOException e)
 			{
